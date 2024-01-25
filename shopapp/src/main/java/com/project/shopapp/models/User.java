@@ -9,10 +9,10 @@ import java.util.Date;
 @Table(name = "users")
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class User extends BaseEntity {
+public class User extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,13 +20,13 @@ public class User extends BaseEntity {
     @Column(name = "fullname", length = 100)
     private String fullName;
 
-    @Column(name = "phone_number" , length = 10, nullable = false)
+    @Column(name = "phone_number", length = 10, nullable = false)
     private String phoneNumber;
 
     @Column(name = "address", length = 200)
     private String address;
 
-    @Column(name = "password",length = 200)
+    @Column(name = "password", length = 200, nullable = false)
     private String password;
 
     private boolean active;
@@ -43,4 +43,5 @@ public class User extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "role_id")
     private com.project.shopapp.models.Role role;
+
 }

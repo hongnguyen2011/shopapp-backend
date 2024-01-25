@@ -1,6 +1,5 @@
 package com.project.shopapp.controllers;
 
-
 import com.project.shopapp.services.impl.IUserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +23,7 @@ public class UserController {
     public ResponseEntity<?> createUser(
             @Valid @RequestBody UserDTO userDTO,
             BindingResult result
-    ) {
+            ) {
         try{
             if(result.hasErrors()) {
                 List<String> errorMessages = result.getFieldErrors()

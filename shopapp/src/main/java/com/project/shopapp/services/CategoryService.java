@@ -6,7 +6,6 @@ import com.project.shopapp.repositories.CategoryRepository;
 import com.project.shopapp.services.impl.ICategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
