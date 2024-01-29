@@ -1,6 +1,6 @@
 package com.project.shopapp.controllers;
 
-import com.project.shopapp.services.impl.IUserService;
+import com.project.shopapp.services.IUserService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
