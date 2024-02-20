@@ -86,7 +86,7 @@ public class User extends BaseEntity implements UserDetails, OAuth2User {
     //Login facebook
     @Override
     public Map<String, Object> getAttributes() {
-        return null;
+        return new HashMap<String, Object>();
     }
     @Override
     public String getName() {

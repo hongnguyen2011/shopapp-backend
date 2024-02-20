@@ -15,8 +15,4 @@ import java.time.LocalDateTime;
 public class CouponCalculationResponse {
     @JsonProperty("result")
     private Double result;
-
-    //errorCode ?
-    @JsonProperty("errorMessage")
-    private String errorMessage;
 }

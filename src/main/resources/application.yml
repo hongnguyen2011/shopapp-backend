@@ -3,6 +3,7 @@ server:
 spring:
   datasource:
     url: ${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3307/ShopApp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
+    #url: ${SPRING_DATASOURCE_URL:jdbc:mysql://ubuntu-server-01.local:3399/ShopApp?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true}
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: ${MYSQL_ROOT_PASSWORD:Abc123456789@}
@@ -39,9 +40,10 @@ spring:
       #spring.data.redis.use-redis-cache
       use-redis-cache: false
       host: ${REDIS_HOST:localhost} # Default to 'localhost' if not provided
+      #host: ${REDIS_HOST:ubuntu-server-01.local} # Default to 'localhost' if not provided
       port: ${REDIS_PORT:6379}      # Default to 6379 if not provided
   security:
-    oauth2:
+    oauth2:      
       client:
         registration:
           facebook:
