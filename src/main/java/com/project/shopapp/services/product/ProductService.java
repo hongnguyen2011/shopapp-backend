@@ -36,7 +36,6 @@ public class ProductService implements IProductService{
     private final ProductRepository productRepository;
     private final CategoryRepository categoryRepository;
     private final ProductImageRepository productImageRepository;
-    private final KafkaTemplate<String, String> kafkaTemplate;
     private static String UPLOADS_FOLDER = "uploads";
     @Override
     @Transactional
